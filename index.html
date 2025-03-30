@@ -1,273 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./public/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./public/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>        
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-
 
     <!-- Home Section -->
     <section class="home" id="home">
-        <div class="home-content">
-            <img class="profile-image" src="" width="300" height="300" alt="avatar">
-            <div class="home-text">
-                <p class="home-intro-pretext">Hi, I'm</p>
-                <h1 class="home-intro-name">Ruthvik</h1>
-                <h4 class="home-intro-posttext">Junior Web Developer</h4>
-                <div class="home-links">
-                    <a href="assets/Resume.pdf" download="Ruthvik Reddy Resume" class="download-resume">Download Resume</a>
-                    <a href="https://github.com/ruthwikr17/" class="github-link" target="_blank"><img src="assets/github.png" alt="github"></a>
-                </div>
-            </div>
+      <div class="home-content">
+        <img
+          class="profile-image"
+          src=""
+          width="300"
+          height="300"
+          alt="avatar"
+        />
+        <div class="home-text">
+          <p class="home-intro-pretext">Hi, I'm</p>
+          <h1 class="home-intro-name">Ruthvik</h1>
+          <h4 class="home-intro-posttext">Junior Web Developer</h4>
+          <div class="home-links">
+            <a
+              href="assets/Resume.pdf"
+              download="Ruthvik Reddy Resume"
+              class="download-resume"
+              >Download Resume</a
+            >
+            <a
+              href="https://github.com/ruthwikr17/"
+              class="github-link"
+              target="_blank"
+              ><img src="assets/github.png" alt="github"
+            /></a>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2 class="heading-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p class="about-paragraph">I am a junior web developer with a passion for creating attractive and functional websites. I have experience in HTML, CSS, JavaScript, and React along with Back-end stack. I am currently looking for new opportunities to work on exciting projects and grow as a developer. </p>
-            </div>
-            <div class="about-education">
-                <img src="assets/education.png" class="education-logo" alt="education">
-                <h4 class="education-heading">Education</h4>
-                <p class="education-info">BTech Bachelors Degree</p>
-                <p class="education-info-ext">in Computer Science</p>
-            </div>
+      <h2 class="heading-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-paragraph">
+            I am a junior web developer with a passion for creating attractive
+            and functional websites. I have experience in HTML, CSS, JavaScript,
+            and React along with Back-end stack. I am currently looking for new
+            opportunities to work on exciting projects and grow as a developer.
+          </p>
         </div>
+        <div class="about-education">
+          <img
+            src="assets/education.png"
+            class="education-logo"
+            alt="education"
+          />
+          <h4 class="education-heading">Education</h4>
+          <p class="education-info">BTech Bachelors Degree</p>
+          <p class="education-info-ext">in Computer Science</p>
+        </div>
+      </div>
     </section>
-
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-        <div class="skills-heading">
-            <p class="skills-text">My</p>
-            <h2 class="heading-title">Skills</h2>
+      <div class="skills-heading">
+        <p class="skills-text">My</p>
+        <h2 class="heading-title">Skills</h2>
+      </div>
+      <div class="skills-content">
+        <div class="skills-card front-end">
+          <div class="skills-title">
+            <h4 class="skills-title-text">Front-end</h4>
+            <img src="assets/front-end.png" class="skills-logo head-logo-1" alt="html"/>
+          </div>
+          <ul>
+            <li>
+              <img src="assets/html.png" class="skill-logo" alt="html" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img src="assets/css.png" class="skill-logo" alt="css" />
+              <p>CSS</p>
+            </li>
+            <li>
+              <img src="assets/js.png" class="skill-logo" alt="js" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="assets/react.png" class="skill-logo" alt="react" />
+              <p>React</p>
+            </li>
+          </ul>
         </div>
-        <div class="skills-content">
-            <div class="skills-card front-end">
-                <div class="skills-title">
-                    <h4 class="skills-title-text">Front-end</h4>
-                    <img src="assets/front-end.png" class="skills-logo head-logo-1" alt="html">
-                </div>
-                <ul>
-                    <li>
-                        <img src="assets/html.png" class="skill-logo" alt="html">
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <img src="assets/css.png" class="skill-logo" alt="css">
-                        <p>CSS</p>
-                    </li>
-                    <li>
-                        <img src="assets/js.png" class="skill-logo" alt="js">
-                        <p>JavaScript</p>
-                    </li>
-                    <li>
-                        <img src="assets/react.png" class="skill-logo" alt="react">
-                        <p>React</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="skills-card back-end">
-                <div class="skills-title">
-                    <h4 class="skills-title-text">Back-end</h4>
-                    <img src="assets/back-end.png" class="skills-logo head-logo-2" alt="css">
-                </div>
-                <ul>
-                    <li>
-                        <img src="assets/nodejs.png" class="skill-logo" alt="nodejs">
-                        <p>Node.js</p>
-                    </li>
-                    <li>
-                        <img src="assets/express.png" class="skill-logo" alt="express">
-                        <p>Express.js</p>
-                    </li>
-                    <li>
-                        <img src="assets/postgres.png" class="skill-logo" alt="postgres">
-                        <p>PostgreSQL</p>
-                    </li>
-                    <li>
-                        <img src="assets/git.png" class="skill-logo" alt="git">
-                        <p>Git & Github</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="skills-card languages">
-                <div class="skills-title">
-                    <h4 class="skills-title-text">Languages</h4>
-                    <img src="assets/languages.png" class="skills-logo head-logo-3" alt="js">
-                </div>
-                <ul>
-                    <li>
-                        <img src="assets/python.png" class="skill-logo" alt="python">
-                        <p>Python</p>
-                    </li>
-                    <li>
-                        <img src="assets/js.png" class="skill-logo" alt="js">
-                        <p>JavaScript</p>
-                    </li>
-                    <li>
-                        <img src="assets/java.png" class="skill-logo" alt="java">
-                        <p>Java</p>
-                    </li>
-                    <li>
-                        <img src="assets/c.png" class="skill-logo" alt="c">
-                        <p>C</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="skills-card back-end">
+          <div class="skills-title">
+            <h4 class="skills-title-text">Back-end</h4>
+            <img
+              src="assets/back-end.png"
+              class="skills-logo head-logo-2"
+              alt="css"
+            />
+          </div>
+          <ul>
+            <li>
+              <img src="assets/nodejs.png" class="skill-logo" alt="nodejs" />
+              <p>Node.js</p>
+            </li>
+            <li>
+              <img src="assets/express.png" class="skill-logo" alt="express" />
+              <p>Express.js</p>
+            </li>
+            <li>
+              <img
+                src="assets/postgres.png"
+                class="skill-logo"
+                alt="postgres"
+              />
+              <p>PostgreSQL</p>
+            </li>
+            <li>
+              <img src="assets/git.png" class="skill-logo" alt="git" />
+              <p>Git & Github</p>
+            </li>
+          </ul>
         </div>
+        <div class="skills-card languages">
+          <div class="skills-title">
+            <h4 class="skills-title-text">Languages</h4>
+            <img
+              src="assets/languages.png"
+              class="skills-logo head-logo-3"
+              alt="js"
+            />
+          </div>
+          <ul>
+            <li>
+              <img src="assets/python.png" class="skill-logo" alt="python" />
+              <p>Python</p>
+            </li>
+            <li>
+              <img src="assets/js.png" class="skill-logo" alt="js" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="assets/java.png" class="skill-logo" alt="java" />
+              <p>Java</p>
+            </li>
+            <li>
+              <img src="assets/c.png" class="skill-logo" alt="c" />
+              <p>C</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
-
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <div class="projects-heading">
-            <h2 class="heading-title">Projects</h2>
+      <div class="projects-heading">
+        <h2 class="heading-title">Projects</h2>
+      </div>
+      <div class="projects-content-wrapper">
+        <div class="projects-content">
+          <div class="project-card">
+            <img
+              src="assets/project1.png"
+              class="project-image"
+              alt="project1"
+            />
+            <h4 class="project-title">Project 1</h4>
+            <p class="project-description">To be added soon.</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="assets/project2.png"
+              class="project-image"
+              alt="project2"
+            />
+            <h4 class="project-title">Project 2</h4>
+            <p class="project-description">To be added soon.</p>
+          </div>
         </div>
-        <div class="projects-content-wrapper">
-            <div class="projects-content">
-                <div class="project-card">
-                    <img src="assets/project1.png" class="project-image" alt="project1">
-                    <h4 class="project-title">Project 1</h4>
-                    <p class="project-description">To be added soon.</p>
-                </div>
-                <div class="project-card">
-                    <img src="assets/project2.png" class="project-image" alt="project2">
-                    <h4 class="project-title">Project 2</h4>
-                    <p class="project-description">To be added soon.</p>
-                </div>
-                <!--
-                <div class="project-card">
-                    <img src="assets/project3.png" class="project-image" alt="project3">
-                    <h4 class="project-title">Project 3</h4>
-                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.</p>
-                </div>
-                -->
-            </div>
-            <!--
-            <button class="scroll-left scroll-button"><img src="assets/scroll-left.png" alt="scroll-left"></button>
-            <button class="scroll-right scroll-button"><img src="assets/scroll-right.png" alt="scroll-right"></button>
-            -->
-        </div>
+      </div>
     </section>
-
 
     <!-- Internships Section -->
     <section class="internships" id="internships">
-        <div class="internships-heading">
-            <h2 class="heading-title">Internships</h2>
+      <div class="internships-heading">
+        <h2 class="heading-title">Internships</h2>
+      </div>
+      <div class="internships-content">
+        <div class="internship-cards">
+          <div class="internship-card">
+            <h3 class="internship-card-title">
+              Android Developer Virtual Internship
+            </h3>
+            <img src="assets/cert-1.png" class="internship-cert" alt="" />
+            <p class="internship-card-text">
+              AICTE EduSkills Cohort 7 - March 2024
+            </p>
+            <p class="internship-description">
+              Gained hands-on experience in Android development using Kotlin and
+              Android Studio, focusing on building and testing apps, UI design,
+              and version control with Git.
+            </p>
+          </div>
+          <div class="internship-card">
+            <h3 class="internship-card-title">
+              Process Mining Virtual Internship
+            </h3>
+            <img src="assets/cert-2.png" class="internship-cert" alt="" />
+            <p class="internship-card-text">
+              AICTE EduSkills Cohort 8 - June 2024
+            </p>
+            <p class="internship-description">
+              Developed insights into business process analysis using process
+              mining tools, focusing on data-driven optimization, process
+              mapping, and performance improvement strategies.
+            </p>
+          </div>
+          <div class="internship-card">
+            <h3 class="internship-card-title">
+              Generative AI Virtual Internship
+            </h3>
+            <img src="assets/cert-3.png" class="internship-cert" alt="" />
+            <p class="internship-card-text">
+              AICTE EduSkills Cohort 9 - September 2024
+            </p>
+            <p class="internship-description">
+              Explored the world of generative AI, focusing on deep learning,
+              neural networks, and natural language processing to create
+              AI-generated content.
+            </p>
+          </div>
+          <div class="internship-card">
+            <h3 class="internship-card-title">
+              Data Science Master Virtual Internship
+            </h3>
+            <img src="assets/cert-4.png" class="internship-cert" alt="" />
+            <p class="internship-card-text">
+              AICTE EduSkills Cohort 10 - December 2024
+            </p>
+            <p class="internship-description">
+              Developed skills in data analysis, machine learning, and data
+              visualization using Python, focusing on data cleaning, feature
+              engineering, and model evaluation.
+            </p>
+          </div>
         </div>
-        <div class="internships-content">
-            <div class="internship-cards">
-                <div class="internship-card">
-                    <h3 class="internship-card-title">Android Developer Virtual Internship</h3>
-                    <img src="assets/cert-1.png" class="internship-cert" alt="">
-                    <p class="internship-card-text">AICTE EduSkills Cohort 7 - March 2024</p>
-                    <p class="internship-description">Gained hands-on experience in Android development using Kotlin and Android Studio, focusing on building and testing apps, UI design, and version control with Git.</p>
-                </div>
-                <div class="internship-card">
-                    <h3 class="internship-card-title">Process Mining Virtual Internship</h3>
-                    <img src="assets/cert-2.png" class="internship-cert" alt="">
-                    <p class="internship-card-text">AICTE EduSkills Cohort 8 - June 2024</p>
-                    <p class="internship-description">Developed insights into business process analysis using process mining tools, focusing on data-driven optimization, process mapping, and performance improvement strategies.</p>
-                </div>
-                <div class="internship-card">
-                    <h3 class="internship-card-title">Generative AI Virtual Internship</h3>
-                    <img src="assets/cert-3.png" class="internship-cert" alt="">
-                    <p class="internship-card-text">AICTE EduSkills Cohort 9 - September 2024</p>
-                    <p class="internship-description">Explored the world of generative AI, focusing on deep learning, neural networks, and natural language processing to create AI-generated content.
-                </div>
-                <div class="internship-card">
-                    <h3 class="internship-card-title">Data Science Master Virtual Internship</h3>
-                    <img src="assets/cert-4.png" class="internship-cert" alt="">
-                    <p class="internship-card-text">AICTE EduSkills Cohort 10 - December 2024</p>
-                    <p class="internship-description">Developed skills in data analysis, machine learning, and data visualization using Python, focusing on data cleaning, feature engineering, and model evaluation.</p>
-                </div>
-            </div>
-        </div>
+      </div>
 
-        <!-- Pop-up Modal-->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h3 id="internship-title"></h3>
-              <p id="internship-details"></p>
-              <img id="full-cert" src="" alt="Full Certificate">
-            </div>
+      <!-- Pop-up Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">×</span>
+          <h3 id="internship-title"></h3>
+          <p id="internship-details"></p>
+          <img id="full-cert" src="" alt="Full Certificate" />
         </div>
+      </div>
     </section>
-
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="contant-heading">
-            <p class="contact-heading-text">Get In Touch</p>
-            <h2 class="heading-title contact-heading-title">Contact Me</h2>
+      <div class="contant-heading">
+        <p class="contact-heading-text">Get In Touch</p>
+        <h2 class="heading-title contact-heading-title">Contact Me</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-info-mail">
+            <img src="assets/email.png" class="skill-logo" alt="mail" />
+            <p class="contact-mail-text">ruthwikb17@gmail.com</p>
+          </div>
+          <div class="contact-info-phone">
+            <img src="assets/phone.png" class="skill-logo" alt="phone" />
+            <p class="contact-phone-text">+91 9247664855</p>
+          </div>
         </div>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-info-mail">
-                    <img src="assets/email.png" class="skill-logo" alt="mail">
-                    <p class="contact-mail-text">ruthwikb17@gmail.com</p>
-                </div>
-                <div class="contact-info-phone">
-                    <img src="assets/phone.png" class="skill-logo" alt="phone">
-                    <p class="contact-phone-text">+91 9247664855</p>
-                </div>
-            </div>
-            <div class="contact-content-name">
-                <h2>Ruthvik Reddy</h2>
-            </div>
-            <div class="contact-links">
-                <a href="https://github.com/ruthwikr17/" class="contact-link" target="_blank"><img src="assets/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/ruthvik-reddy-b69bb7256/" class="contact-link" target="_blank"><img src="assets/linkedin.png" alt="github"></a>
-                <a href="https://www.instagram.com/ruthwikr17/" class="contact-link" target="_blank"><img src="assets/instagram.png" alt="github"></a>
-            </div>
+        <div class="contact-content-name">
+          <h2>Ruthvik Reddy</h2>
         </div>
+        <div class="contact-links">
+          <a
+            href="https://github.com/ruthwikr17/"
+            class="contact-link"
+            target="_blank"
+            ><img src="assets/github.png" alt="github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/ruthvik-reddy-b69bb7256/"
+            class="contact-link"
+            target="_blank"
+            ><img src="assets/linkedin.png" alt="linkedin"
+          /></a>
+          <a
+            href="https://www.instagram.com/ruthwikr17/"
+            class="contact-link"
+            target="_blank"
+            ><img src="assets/instagram.png" alt="instagram"
+          /></a>
+        </div>
+      </div>
     </section>
-
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>        
-    </nav>
-
 
     <!-- Footer -->
     <div class="footer">
-        <p>Copyright &copy; 2025 Ruthvik Reddy</p>
+      <p>Copyright © 2025 Ruthvik Reddy</p>
     </div>
 
-    
     <!-- JavaScript -->
     <script src="./src/index.js"></script>
-</body>
+  </body>
 </html>
