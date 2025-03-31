@@ -1,3 +1,29 @@
+// Auto close for Hamburguer Menu
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const nav = document.querySelector('nav'); 
+
+  // Close menu on link click 
+  const navLinks = document.querySelectorAll('nav ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (navToggle.checked) {
+        navToggle.checked = false;
+      }
+    });
+  });
+
+  // Close menu on click outside the nav
+  document.addEventListener('click', function(event) {
+    const isClickInsideNav = nav.contains(event.target);
+
+    if (navToggle.checked && !isClickInsideNav) {
+      navToggle.checked = false;
+    }
+  });
+});
+
+
 const modal = document.getElementById('modal');
 const fullCert = document.getElementById('full-cert');
 const internshipTitle = document.getElementById('internship-title');
