@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../public/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>SarcasmSense</title>
+  </head>
+  <body>
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+      <a href="index.html" class="back-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+      <div class="project-header-content">
+        <h1 class="project-title">SarcasmSense — Transformers-based Sarcasm Detection</h1>
+        <p class="project-subtitle">A Transformer-based NLP system that detects sarcasm in short-form text with high contextual accuracy</p>
+        <div class="project-meta">
+          <span class="project-date">April 2025</span>
+          <span class="meta-separator">•</span>
+          <span class="project-category">Deep Learning / NLP / Full-Stack AI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ruthwikr17/sarcasm-detection-transformers" target="_blank" class="project-link-btn github-btn">
+            <img src="../assets/GitHub.png" alt="github" />
+            View Code
+          </a>
+          <a href="https://sarcasm-detection-transformers.onrender.com/" target="_blank" class="project-link-btn demo-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Image/Banner -->
+    <section class="project-banner">
+      <div class="banner-container">
+        <img src="../assets/Screenshots/Project 3/Main Page.png" alt="Project Banner" class="banner-image" />
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-text">
+          SarcasmFormer is an end-to-end Natural Language Understanding system designed to identify sarcasm in short-form text such as tweets. 
+          Traditional sentiment models often fail to capture implicit tone reversals; this system leverages deep contextual Transformer embeddings to resolve such ambiguity.
+        </p>
+        <p class="section-text">
+          The project covers the complete AI pipeline - dataset preprocessing, Transformer fine-tuning, comparative evaluation, and deployment through an interactive web dashboard, delivering real-time sarcasm predictions with confidence scoring.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section tech-stack-section">
+      <div class="section-content">
+        <h2 class="section-heading">Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <img src="../assets/python.png" alt="Python" class="tech-icon" />
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/PyTorch.png" alt="PyTorch" class="tech-icon" />
+            <span class="tech-name">PyTorch</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Transformers.svg" alt="Transformers" class="tech-icon" />
+            <span class="tech-name">Transformers</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Flask.png" alt="Flask" class="tech-icon" />
+            <span class="tech-name">Flask</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/GitHub.png" alt="Git" class="tech-icon" />
+            <span class="tech-name">Git & GitHub</span>
+          </div>
+          <!-- Add more tech items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Key Features</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Context-Aware Sarcasm Detection</h3>
+              <p class="feature-description">
+                Fine-tuned BERT and RoBERTa models classify text as sarcastic or non-sarcastic using deep contextual embeddings.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Real-Time Prediction Dashboard</h3>
+              <p class="feature-description">
+                Interactive dark-themed web interface allowing instant sarcasm detection with confidence visualization.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Dual-Model Comparison Mode</h3>
+              <p class="feature-description">
+                Users can compare BERT and RoBERTa predictions side-by-side on the same input text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation/Methodology -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Implementation</h2>
+        <p class="section-text">
+          The system is designed as a lightweight full-stack pipeline connecting an AI text generation service with a social media automation layer and a custom web UI.
+        </p>
+        <ul class="implementation-list">
+          <li>Preprocessed and balanced sarcasm-labeled tweet datasets.</li>
+          <li>Fine-tuned BERT and RoBERTa using PyTorch and Hugging Face Transformers.</li>
+          <li>Evaluated performance using Accuracy, Precision, Recall, and F1-score.</li>
+          <li>Built a Flask-based UI for real-time inference.</li>
+          <li>Implemented model confidence visualization and comparison mode.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Results/Outcomes -->
+    <section class="project-section results-section">
+      <div class="section-content">
+        <h2 class="section-heading">Results & Outcomes</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-value">88.5%</div>
+            <div class="result-label">RoBERTa Accuracy</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">86.2%</div>
+            <div class="result-label">BERT Accuracy</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">&lt;1s</div>
+            <div class="result-label">Inference Time</div>
+          </div>
+        </div>
+        <p class="section-text">
+          RoBERTa achieved superior contextual understanding, particularly in ambiguity-heavy sarcastic expressions, establishing it as the optimal model for deployment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Challenges & Learnings -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Challenges & Learnings</h2>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Capturing Implicit Context</h3>
+          <p class="section-text">
+            Sarcasm relies heavily on hidden intent. Transformer attention mechanisms proved essential in modeling such dependencies.
+          </p>
+        </div>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Deployment Optimization</h3>
+          <p class="section-text">
+            Managing large Transformer model inference in limited-resource environments required lazy-loading and container optimization.
+          </p>
+        </div>
+        <div class="learnings">
+          <h3 class="challenge-title">Key Learnings</h3>
+          <p class="section-text">
+            Strengthened expertise in deep NLP pipelines, Transformer fine-tuning, inference optimization, and AI-driven web deployment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Images/Screenshots -->
+    <section class="project-section gallery-section">
+      <div class="section-content">
+        <h2 class="section-heading">Project Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 3/Main Page.png" alt="Landing Page" class="gallery-image" />
+            <p class="gallery-caption">Landing Page</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 3/RoBERTa Preview.png" alt="RoBERTa Preview" class="gallery-image" />
+            <p class="gallery-caption">RoBERTa Prediction - Not Sarcastic</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 3/BERT Preview.png" alt="BERT Preview" class="gallery-image" />
+            <p class="gallery-caption">BERT Prediction - Sarcastic</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 3/Model Comparision.png" alt="Model Comparision" class="gallery-image" />
+            <p class="gallery-caption">Model Comparision</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img src="..." alt="..." id="lightbox-img" class="gallery-image" />
+        <p id="lightbox-caption" class="lightbox-caption-text"></p>
+      </div>
+    </div>
+
+    <!-- Future Improvements -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Future Improvements</h2>
+        <ul class="improvements-list">
+          <li>Refined model calibration and deeper fine-tuning to reduce sarcasm over-prediction and improve class balance sensitivity.</li>
+          <li>Expansion of training data with more diverse, context-rich sarcastic and non-sarcastic samples.</li>
+          <li>Multilingual sarcasm detection using cross-lingual Transformer models.</li>
+          <li>Conversation-aware sarcasm modeling using multi-turn contextual inputs.</li>
+          <li>Optimized lightweight inference for faster real-time deployment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation to Other Projects -->
+    <section class="other-projects">
+      <div class="other-projects-content">
+        <h2 class="section-heading">Other Projects</h2>
+        <div class="other-projects-grid">
+          <a href="/projects/house-price-pred.html" class="other-project-card">
+            <span class="other-project-number">03</span>
+            <span class="other-project-title">Real Estate Market Intelligence</span>
+          </a>
+          <a href="/projects/facial-analytics.html" class="other-project-card">
+            <span class="other-project-number">04</span>
+            <span class="other-project-title">Real-Time Age & Gender Intelligence System</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Copyright © 2025 Ruthvik Reddy</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../src/project-template.js"></script>
+  </body>
+</html>

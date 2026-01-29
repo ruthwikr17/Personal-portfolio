@@ -1,4 +1,4 @@
-// Auto close for Hamburguer Menu
+// Auto close for Hamburguer Menu on Mobile/Tablet
 document.addEventListener('DOMContentLoaded', function() {
   const navToggle = document.getElementById('nav-toggle');
   const nav = document.querySelector('nav'); 
@@ -24,33 +24,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Internship modal logic 
+
 const modal = document.getElementById('modal');
 const fullCert = document.getElementById('full-cert');
 const internshipTitle = document.getElementById('internship-title');
-const internshipDetails = document.getElementById('internship-details');
 const closeBtn = document.querySelector('.close');
-const certImages = document.querySelectorAll('.internship-cert');
 
-// Add click event to each certificate image
-certImages.forEach(img => {
-  img.addEventListener('click', (e) => {
-    console.log("Certificate clicked", e.target.src);
-    modal.style.display = 'flex';
-    fullCert.src = e.target.src; 
+document.querySelectorAll('.internship-card-title.clickable').forEach(title => {
+  title.addEventListener('click', (e) => {
     const card = e.target.closest('.internship-card');
-    internshipTitle.textContent = card.querySelector('.internship-card-title').textContent;
-    internshipDetails.textContent = card.querySelector('.internship-card-text').textContent;
+    const certPath = card.getAttribute('data-cert');
+
+    modal.style.display = 'flex';
+    fullCert.src = certPath;
+    internshipTitle.textContent = e.target.textContent;
   });
 });
 
-// Close the modal when the close button is clicked
 closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-// Close the modal when clicking outside the modal content
 modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
+  if (e.target === modal) modal.style.display = 'none';
 });
+
+
+const sideNav = document.getElementById("sideNav");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      sideNav.classList.add("active");
+    } else {
+      sideNav.classList.remove("active");
+    }
+  });

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../public/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>FaceMetric</title>
+  </head>
+  <body>
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+      <a href="index.html" class="back-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+      <div class="project-header-content">
+        <h1 class="project-title">Real-Time Age & Gender Intelligence System</h1>
+        <p class="project-subtitle">A computer vision system that detects faces and predicts age group and gender from live camera or images.</p>
+        <div class="project-meta">
+          <span class="project-date">July 2025</span>
+          <span class="meta-separator">•</span>
+          <span class="project-category">Computer Vision / Deep Learning</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ruthwikr17/real-time-face-detection" target="_blank" class="project-link-btn github-btn">
+            <img src="../assets/GitHub.png" alt="github" />
+            View Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Image/Banner -->
+    <section class="project-banner">
+      <div class="banner-container">
+        <img src="../assets/Screenshots/Project 4/Banner.png" alt="Project Banner" class="banner-image"/>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-text">
+          FaceMetric is a real-time facial analysis system that performs automated face detection followed by age group and gender classification. The application supports both webcam streaming and static image input through an interactive GUI.
+        </p>
+        <p class="section-text">
+          The project demonstrates practical deployment of deep neural networks for visual recognition tasks using OpenCV’s DNN framework and pre-trained Caffe models, integrated into a desktop interface for real-world usability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section tech-stack-section">
+      <div class="section-content">
+        <h2 class="section-heading">Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <img src="../assets/python.png" alt="Python" class="tech-icon" />
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Numpy.png" alt="NumPy" class="tech-icon" />
+            <span class="tech-name">NumPy</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Caffee.png" alt="Caffee Models" class="tech-icon" />
+            <span class="tech-name">Caffee Models</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/OpenCV.png" alt="Open CV" class="tech-icon" />
+            <span class="tech-name">Open CV</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/GitHub.png" alt="Git" class="tech-icon" />
+            <span class="tech-name">Git & GitHub</span>
+          </div>
+          <!-- Add more tech items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Key Features</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Real-Time Face Detection</h3>
+              <p class="feature-description">
+                Detects multiple faces from live webcam feed or uploaded images using OpenCV’s deep learning face detector.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Age Group Prediction</h3>
+              <p class="feature-description">
+                Classifies detected faces into predefined age ranges using a trained Caffe-based neural network.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Gender Classification</h3>
+              <p class="feature-description">
+                Predicts gender from facial features using a dedicated deep neural model.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">04</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Interactive GUI</h3>
+              <p class="feature-description">
+                Provides image upload and webcam modes through a Tkinter-based desktop interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation/Methodology -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Implementation</h2>
+        <ul class="implementation-list">
+          <li>Face detection performed using OpenCV DNN face detection model.</li>
+          <li>Pre-trained Caffe networks used for age and gender classification.</li>
+          <li>Facial regions extracted and passed through DNN pipelines.</li>
+          <li>Tkinter GUI handles user input and visualization.</li>
+          <li>Bounding boxes and prediction labels rendered on output frames.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Results/Outcomes -->
+    <section class="project-section results-section">
+      <div class="section-content">
+        <h2 class="section-heading">Results & Outcomes</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-value" style="font-size: 1.8rem; margin-bottom: 1rem;">&lt; 50 ms</div>
+            <div class="result-label">Average inference time per frame</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value" style="font-size: 1.8rem; margin-bottom: 1rem;">Multi-face detection</div>
+            <div class="result-label">Supports simultaneous predictions</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value" style="font-size: 1.8rem; margin-bottom: 1rem;">Stable real-time performance</div>
+            <div class="result-label">Smooth webcam processing</div>
+          </div>
+        </div>
+        <p class="section-text">
+          The system reliably identifies faces and predicts demographic attributes in real-time with consistent accuracy under normal lighting conditions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Challenges & Learnings -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Challenges & Learnings</h2>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Model Integration</h3>
+          <p class="section-text">
+            Understanding Caffe model loading and OpenCV DNN inference pipelines.
+          </p>
+        </div>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Real-Time Optimization</h3>
+          <p class="section-text">
+            Balancing detection accuracy and frame processing speed.
+          </p>
+        </div>
+         <div class="challenge-item">
+          <h3 class="challenge-title">GUI Integration</h3>
+          <p class="section-text">
+            Combining computer vision pipelines with desktop application workflows.
+          </p>
+        </div>
+        <div class="learnings">
+          <h3 class="challenge-title">Key Learnings</h3>
+          <p class="section-text">
+            This project strengthened my understanding of generative AI APIs, REST integrations, OAuth-based automation, and cloud deployment of interactive AI applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Images/Screenshots -->
+    <section class="project-section gallery-section">
+      <div class="section-content">
+        <h2 class="section-heading">Project Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/Landing Window.png" alt="Landing Window" class="gallery-image" />
+            <p class="gallery-caption">Tkinter GUI - Detection mode</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/1.png" alt="1" class="gallery-image" />
+            <p class="gallery-caption">Correct Prediction for a Boy</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/3.png" alt="2" class="gallery-image" />
+            <p class="gallery-caption">Correct Prediction for a Young Woman</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/4.png" alt="3" class="gallery-image" />
+            <p class="gallery-caption">Correct Prediction for an Old Man</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/5.png" alt="4" class="gallery-image" />
+            <p class="gallery-caption">Correct Prediction for an Old Woman</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 4/6.png" alt="5" class="gallery-image" />
+            <p class="gallery-caption">Correct Prediction for a Baby</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img src="..." alt="..." id="lightbox-img" class="gallery-image" />
+        <p id="lightbox-caption" class="lightbox-caption-text"></p>
+      </div>
+    </div>
+
+    <!-- Future Improvements -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Future Improvements</h2>
+        <ul class="improvements-list">
+          <li>Train custom CNN model on larger demographic datasets.</li>
+          <li>Refine age prediction into narrower and more granular age ranges for higher demographic precision.</li>
+          <li>Add emotion recognition module.</li>
+          <li>Web-based deployment for platform independence.</li>
+          <li>Improve temporal stability to maintain consistent predictions during subject motion in live video.</li>
+          <li>Enhance multi-face processing to deliver accurate age and gender results when multiple individuals appear simultaneously.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation to Other Projects -->
+    <section class="other-projects">
+      <div class="other-projects-content">
+        <h2 class="section-heading">Other Projects</h2>
+        <div class="other-projects-grid">
+          <a href="/projects/plagiarism-detection.html" class="other-project-card">
+            <span class="other-project-number">05</span>
+            <span class="other-project-title">Semantic Plagiarism Detection System</span>
+          </a>
+          <a href="/projects/lawmate.html" class="other-project-card">
+            <span class="other-project-number">06</span>
+            <span class="other-project-title">LawMate</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Copyright © 2025 Ruthvik Reddy</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../src/project-template.js"></script>
+  </body>
+</html>

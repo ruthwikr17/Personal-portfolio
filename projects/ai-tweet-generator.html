@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../public/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>PostX</title>
+  </head>
+  <body>
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+      <a href="index.html" class="back-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+      <div class="project-header-content">
+        <h1 class="project-title">PostX — AI Tweet Generator</h1>
+        <p class="project-subtitle">An AI-powered system that generates and posts high-quality tweets automatically</p>
+        <div class="project-meta">
+          <span class="project-date">January 2026</span>
+          <span class="meta-separator">•</span>
+          <span class="project-category">Generative AI / Full-Stack Automation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ruthwikr17/postx-tweet-generator" target="_blank" class="project-link-btn github-btn">
+            <img src="../assets/GitHub.png" alt="github" />
+            View Code
+          </a>
+          <a href="https://postx-tweet-generator.streamlit.app/" target="_blank" class="project-link-btn demo-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Image/Banner -->
+    <section class="project-banner">
+      <div class="banner-container">
+        <img src="../assets/Screenshots/Project 1/Landing Page.png" alt="Project Banner" class="banner-image" />
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-text">
+          PostX is an end-to-end AI automation system that generates high-quality tweets from natural language prompts and posts them directly to a demo X (Twitter) account. The project demonstrates real-world integration of modern generative AI APIs with social media automation pipelines.
+        </p>
+        <p class="section-text">
+          The goal of PostX was to build a complete AI-powered application from prompt engineering and text generation to API-based publishing and cloud deployment while maintaining an interface visually inspired by X’s dark theme. It serves as both a functional automation tool and a full-stack portfolio project.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-section tech-stack-section">
+      <div class="section-content">
+        <h2 class="section-heading">Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <img src="../assets/python.png" alt="Python" class="tech-icon" />
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Streamlit.png" alt="Streamlit" class="tech-icon" />
+            <span class="tech-name">Streamlit</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/X.png" alt="Tweepy" class="tech-icon" />
+            <span class="tech-name">Tweepy (X API)</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Gemini.svg" alt="Gemini API" class="tech-icon" />
+            <span class="tech-name">Gemini API</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/GitHub.png" alt="Git" class="tech-icon" />
+            <span class="tech-name">Git & GitHub</span>
+          </div>
+          <!-- Add more tech items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Key Features</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <div class="feature-content">
+              <h3 class="feature-title">AI-Powered Tweet Generation</h3>
+              <p class="feature-description">
+                Uses Google Gemini’s generative language model with custom prompt engineering to produce concise, high-density tweets optimized for X’s 280-character limit.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Editable Tweet Preview</h3>
+              <p class="feature-description">
+                Provides a real-time tweet preview interface where users can edit generated content before publishing.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Automated Posting to X</h3>
+              <p class="feature-description">
+                Integrates with X’s API using OAuth authentication to automatically publish generated tweets to a demo account.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation/Methodology -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Implementation</h2>
+        <p class="section-text">
+          The system is designed as a lightweight full-stack pipeline connecting an AI text generation service with a social media automation layer and a custom web UI.
+        </p>
+        <ul class="implementation-list">
+          <li>Prompt-engineered system instructions to control tone, length, and structure of generated tweets.</li>
+          <li>REST API calls to Google Gemini for text generation.</li>
+          <li>OAuth-based authentication and posting via X API using Tweepy.</li>
+          <li>Streamlit-based UI replicating X’s dark theme for user interaction.</li>
+          <li>Cloud deployment on Streamlit for public accessibility.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Results/Outcomes -->
+    <section class="project-section results-section">
+      <div class="section-content">
+        <h2 class="section-heading">Results & Outcomes</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-value">&lt; 1s</div>
+            <div class="result-label">Tweet Generation Time</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">280</div>
+            <div class="result-label">Character Limit Enforced</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">100%</div>
+            <div class="result-label">Automated Posting Success</div>
+          </div>
+        </div>
+        <p class="section-text">
+          The application successfully generates meaningful, publication-ready tweets in under a second and posts them reliably to X via API automation. The project demonstrates stable AI integration, controlled text generation, and real-time social media publishing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Challenges & Learnings -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Challenges & Learnings</h2>
+        <div class="challenge-item">
+          <h3 class="challenge-title">API Rate Limits and Access Control</h3>
+          <p class="section-text">
+            Managing free-tier API quotas and authentication flows required careful request handling and prompt optimization to stay within usage limits.
+          </p>
+        </div>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Prompt Engineering for Length Control</h3>
+          <p class="section-text">
+            Achieving consistent tweet-length outputs required structured system instructions and iterative tuning of generation parameters.
+          </p>
+        </div>
+        <div class="learnings">
+          <h3 class="challenge-title">Key Learnings</h3>
+          <p class="section-text">
+            This project strengthened my understanding of generative AI APIs, REST integrations, OAuth-based automation, and cloud deployment of interactive AI applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Images/Screenshots -->
+    <section class="project-section gallery-section">
+      <div class="section-content">
+        <h2 class="section-heading">Project Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 1/Landing Page.png" alt="Landing Page" class="gallery-image" />
+            <p class="gallery-caption">Landing Page</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 1/Tweet Prompt.png" alt="Prompt" class="gallery-image" />
+            <p class="gallery-caption">Prompt Field</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 1/Prompt Response.png" alt="Generated Tweet 3" class="gallery-image" />
+            <p class="gallery-caption">AI Generated Tweet</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 1/Tweet Posted.png" alt="Tweet Posted to X" class="gallery-image" />
+            <p class="gallery-caption">Tweet Posted to X</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 1/Tweet.png" alt="Posted Tweet" class="gallery-image" />
+            <p class="gallery-caption">Posted Tweet on X</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img src="..." alt="..." id="lightbox-img" class="gallery-image" />
+        <p id="lightbox-caption" class="lightbox-caption-text"></p>
+      </div>
+    </div>
+
+    <!-- Future Improvements -->
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Future Improvements</h2>
+        <ul class="improvements-list">
+          <li>User authentication to allow posting from personal X accounts.</li>
+          <li>Multiple tone presets (professional, casual, humorous).</li>
+          <li>Scheduled tweet posting.</li>
+          <li>Analytics dashboard for engagement tracking.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation to Other Projects -->
+    <section class="other-projects">
+      <div class="other-projects-content">
+        <h2 class="section-heading">Other Projects</h2>
+        <div class="other-projects-grid">
+          <a href="/projects/sarcasm-detection.html" class="other-project-card">
+            <span class="other-project-number">02</span>
+            <span class="other-project-title">Transformers-based Sarcasm Detection</span>
+          </a>
+          <a href="/projects/house-price-pred.html" class="other-project-card">
+            <span class="other-project-number">03</span>
+            <span class="other-project-title">Real Estate Market Intelligence</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Copyright © 2025 Ruthvik Reddy</p>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../src/project-template.js"></script>
+  </body>
+</html>

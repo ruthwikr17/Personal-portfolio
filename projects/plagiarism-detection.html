@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../public/project-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plagiarism Detector</title>
+  </head>
+  <body>
+    <nav class="back-nav">
+      <a href="index.html" class="back-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Portfolio
+      </a>
+    </nav>
+
+    <section class="project-header">
+      <div class="project-header-content">
+        <h1 class="project-title">Semantic Plagiarism Detection System</h1>
+        <p class="project-subtitle">A semantic analysis tool using NLP and OCR to detect content similarity across documents and images</p>
+        <div class="project-meta">
+          <span class="project-date">March 2025</span>
+          <span class="meta-separator">•</span>
+          <span class="project-category">NLP / Computer Vision</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ruthwikr17/plagiarism-detection-using-NLP-OCR" target="_blank" class="project-link-btn github-btn">
+            <img src="../assets/GitHub.png" alt="github" />
+            View Code
+          </a>
+          <a href="https://ocr-plagiarism-detector.streamlit.app/" target="_blank" class="project-link-btn demo-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-banner">
+      <div class="banner-container">
+        <img src="../assets/Screenshots/Project 5/Landing Page.png" alt="Project Banner" class="banner-image" />
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-text">
+          This project is an advanced plagiarism detection dashboard built with Streamlit. Unlike traditional tools that rely on exact keyword matching, this application leverages Semantic Analysis (using Sentence Transformers) to detect paraphrased content and conceptual similarities between documents.
+        </p>
+        <p class="section-text">
+          The system features a versatile file handler capable of processing PDFs, Word documents (.docx), and even images via OCR (Optical Character Recognition). It provides a clean, user-friendly interface for uploading two sources, previewing their content natively in the browser, and receiving an instant similarity score with a detailed verdict.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section tech-stack-section">
+      <div class="section-content">
+        <h2 class="section-heading">Technologies Used</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <img src="../assets/python.png" alt="Python" class="tech-icon" />
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Streamlit.png" alt="Streamlit" class="tech-icon" />
+            <span class="tech-name">Streamlit</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Transformers.svg" alt="Sentence Transformers" class="tech-icon" />
+            <span class="tech-name">Sentence Transformers</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/Scikit-learn.png" alt="Scikit Learn" class="tech-icon" />
+            <span class="tech-name">Scikit-Learn</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/TesseractOCR.png" alt="Tesseract OCR" class="tech-icon" />
+            <span class="tech-name">Tesseract OCR</span>
+          </div>
+          <div class="tech-item">
+            <img src="../assets/GitHub.png" alt="Git" class="tech-icon" />
+            <span class="tech-name">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Key Features</h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Semantic Similarity Analysis</h3>
+              <p class="feature-description">
+                Uses the <code>paraphrase-MiniLM-L6-v2</code> model to generate vector embeddings, allowing the system to detect plagiarism even when words are synonym-swapped or rephrased.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Multi-Format & OCR Support</h3>
+              <p class="feature-description">
+                Supports upload of PDFs, DOCX, TXT, and Images (JPG/PNG). Integrated Tesseract OCR extracts text from image-based documents for analysis.
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <div class="feature-content">
+              <h3 class="feature-title">Native Document Preview</h3>
+              <p class="feature-description">
+                Includes a popup modal viewer that renders PDFs and images directly within the app, allowing users to visually verify the uploaded content without downloading it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Implementation</h2>
+        <p class="section-text">
+          The pipeline integrates computer vision and natural language processing to normalize data before analysis.
+        </p>
+        <ul class="implementation-list">
+          <li><strong>Text Extraction:</strong> Utilizes <code>PyPDF2</code> for PDFs, <code>python-docx</code> for Word files, and <code>pytesseract</code> for image OCR.</li>
+          <li><strong>Preprocessing:</strong> Cleans text by removing special characters and normalizing whitespace using RegEx.</li>
+          <li><strong>Vectorization:</strong> Encodes processed text into high-dimensional vectors using HuggingFace Sentence Transformers.</li>
+          <li><strong>Comparison:</strong> Computes Cosine Similarity between vectors to derive a match percentage.</li>
+          <li><strong>UI/UX:</strong> Implements Streamlit Dialogs for clean popups and custom iframes for PDF rendering.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-section results-section">
+      <div class="section-content">
+        <h2 class="section-heading">Results & Outcomes</h2>
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-value">&lt; 1s</div>
+            <div class="result-label">Embedding & Inference Time</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">4+</div>
+            <div class="result-label">File Formats Supported</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">0%</div>
+            <div class="result-label">False Positive Rate (Distinct Text)</div>
+          </div>
+        </div>
+        <p class="section-text">
+          The model successfully distinguishes between identical copies, paraphrased content (scoring between 60-80%), and distinct topics (scoring near 0%). The integration of OCR ensures that even screenshots of text can be analyzed for plagiarism effectively.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Challenges & Learnings</h2>
+        <div class="challenge-item">
+          <h3 class="challenge-title">Visualizing Document Previews</h3>
+          <p class="section-text">
+            Streamlit does not natively display PDF files easily. I solved this by encoding the PDF to Base64 and embedding it within an HTML <code>&lt;iframe&gt;</code> inside a modal dialog.
+          </p>
+        </div>
+        <div class="challenge-item">
+          <h3 class="challenge-title">OCR Deployment on Cloud</h3>
+          <p class="section-text">
+            Deploying Tesseract on cloud platforms required configuring binary dependencies (<code>packages.txt</code>) alongside Python libraries, a crucial learning step in cloud DevOps.
+          </p>
+        </div>
+        <div class="learnings">
+          <h3 class="challenge-title">Key Learnings</h3>
+          <p class="section-text">
+            This project deepened my knowledge of vector embeddings, cosine similarity math, and the complexities of handling binary file streams in a web application context.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section gallery-section">
+      <div class="section-content">
+        <h2 class="section-heading">Project Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/Landing Page.png" alt="Dashboard UI" class="gallery-image" />
+            <p class="gallery-caption">Dashboard Interface</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/Image Upload.png" alt="File Uploads" class="gallery-image" />
+            <p class="gallery-caption">File Upload (Images)</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/Images Result.png" alt="Images Result" class="gallery-image" />
+            <p class="gallery-caption">Image Analysis Results</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/View Image.png" alt="View Document" class="gallery-image" />
+            <p class="gallery-caption">View Uploaded Documents</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/Cross-Format Compatibility.png" alt="Cross Formats" class="gallery-image" />
+            <p class="gallery-caption">Cross-Format Compatibility (PDF and Word Doc)</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/Screenshots/Project 5/Text inputs.png" alt="Text Inputs" class="gallery-image" />
+            <p class="gallery-caption">Text Inputs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img src="..." alt="..." id="lightbox-img" class="gallery-image" />
+        <p id="lightbox-caption" class="lightbox-caption-text"></p>
+      </div>
+    </div>
+
+    <section class="project-section">
+      <div class="section-content">
+        <h2 class="section-heading">Future Improvements</h2>
+        <ul class="improvements-list">
+          <li>Sentence-level highlighting to show exactly which parts of the text were plagiarized.</li>
+          <li>Support for batch processing (comparing one document against a folder of documents).</li>
+          <li>Exportable PDF reports for the analysis results.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="other-projects">
+      <div class="other-projects-content">
+        <h2 class="section-heading">Other Projects</h2>
+        <div class="other-projects-grid">
+          <a href="/projects/ai-tweet-generator.html" class="other-project-card">
+            <span class="other-project-number">01</span>
+            <span class="other-project-title">PostX — AI Tweet Generator</span>
+          </a>
+          <a href="/projects/sarcasm-detection.html" class="other-project-card">
+            <span class="other-project-number">02</span>
+            <span class="other-project-title">Transformers-based Sarcasm Detection</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Copyright © 2025 Ruthvik Reddy</p>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <script src="../src/project-template.js"></script>
+  </body>
+</html>
